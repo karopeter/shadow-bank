@@ -1,0 +1,15 @@
+<article class="product">
+  <div class="container" (click)="onClicked()">
+  {{ productName }}
+</div>
+<p>An Awesome product!</p>
+</article>
+
+
+<div class="dropdown">
+  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Business Operation</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+     <li><a class="dropdown-item" [routerLink]="['/operations']">{{ operations }}</a></li>
+     <li><a class="dropdown-item" href="#">Products</a></li>
+  </ul>
+</div>
