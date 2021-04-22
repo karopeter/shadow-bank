@@ -11,6 +11,9 @@ import { OperationsComponent } from './operations/operations.component';
 import { SplitComponent } from './split/split.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -20,10 +23,13 @@ import { ServerElementComponent } from './server-element/server-element.componen
     OperationsComponent,
     SplitComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([
